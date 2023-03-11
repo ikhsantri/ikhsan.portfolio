@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    z-index: 50;
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+nav .container,
+.home .container,
+.about .container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .links ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .8rem;
+}
+
+nav .container .logo a {
+    color: black;
+}
+
+nav .container .links a {
+    color: black;
+}
+
+nav .container .links a::after {
+    content: '';
+    display: block;
+    border-bottom: 1.5px solid black;
+    transform: scaleX(0);
+    transition: .3s linear;
+}
+
+nav .container .links a:hover::after {
+    transform: scaleX(0.5);
+}
+
+nav .hamburger-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .hamburger-menu {
+    display: none;
+}
+
+nav .hamburger-menu a {
+    color: black;
+}
+
+.home {
+    padding-top: 5rem;
+}
+
+.home .container {
+    display: flex;
+    margin: 10rem auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .container .content-left h2 {
+    font-size: 2rem;
+}
+
+.home .container .content-left p {
+    font-size: .7rem;
+}
+
+.home .container .content-left .cta {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: .8rem 2rem;
+    background-color: aqua;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: .9rem;
+}
+
+.home .container .content-right img {
+    width: 320px;
+}
+
+.about {
+    padding: 6rem 0;
+}
+
+.about .left-content {
+    margin-right: 1rem;
+}
+
+.about .left-content h4 {
+    color: aqua;
+    text-transform: uppercase;
+}
+
+.about .left-content h2 {
+    font-size: 1.6rem;
+}
+
+.about .left-content p,
+.about .right-content p {
+    font-size: .8rem;
+}
+
+.about .right-content {
+    margin-top: 4.8rem;
+}
+
+.about .right-content .about-icons,
+.hireme-content .container .hireme-icons {
+    padding-top: .5rem;
+    display: flex;
+    gap: .6rem;
+}
+
+.about .right-content .about-icons a,
+.hireme-content .container .hireme-icons a,
+.contact .container .content-left a {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.about .right-content .about-icons a:hover {
+    background-color: aqua;
+}
+
+.portfolio {
+    margin: 2rem 0;
+    padding-top: 4rem;
+}
+
+.portfolio .portfolio-content {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.portfolio .portfolio-content h2,
+.portfolio .portfolio-content p {
+    text-align: center;
+}
+
+.portfolio .portfolio-content h2 {
+    color: aqua;
+}
+
+
+.portfolio .portfolio-content p {
+    max-width: 40%;
+    margin: .7rem auto;
+    font-size: .8rem;
+}
+
+.portfolio .portfolio-content .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    gap: .5rem;
+}
+
+.portfolio .portfolio-content .container .grid-item {
+    width: 48%;
+    margin: 1rem auto;
+}
+
+.portfolio .portfolio-content .container img {
+    border-radius: 1rem;
+}
+
+.portfolio .portfolio-content .container h3,
+.portfolio .portfolio-content .container p {
+    color: black;
+    text-align: left;
+    min-width: 100%;
+}
+
+.portfolio .portfolio-content .container h3 {
+    margin-top: 1rem;
+}
+
+.portfolio .portfolio-content .container p {
+    margin-top: .5rem;
+}
+
+.clients-content {
+    /* background-color: rgb(1, 40, 55); */
+    padding-top: 2rem;
+}
+
+.clients-content .container {
+    max-width: 60rem;
+    margin: 3rem auto;
+    padding: 0 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.clients-content .container .content {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-content h2 {
+    text-align: center;
+    color: black;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.clients-content p {
+    text-align: center;
+    color: aqua;
+}
+
+.clients-content .container .content img {
+    width: 100%;
+}
+
+
+.clients-content .container .content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact {
+    width: 100%;
+    margin: 5rem auto 0;
+    background-color: rgb(1, 40, 55);
+}
+
+.contact .container {
+    display: flex;
+    max-width: 60rem;
+    margin: auto;
+    padding: 5rem 4rem;
+    color: #fff;
+}
+
+.contact .container h2 {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.contact .container p {
+    font-size: .8rem;
+    max-width: 70%;
+}
+
+.contact .container .grid-item {
+    width: 50%;
+}
+
+.contact .container .content-left a {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.contact .container .content-left .left-icons {
+    margin-top: 2rem;
+}
+
+
+.contact .container .content-right {
+    max-width: 20%;
+}
+
+.contact .container .content-right a {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: .7rem 0;
+}
+
+.contact .container .content-right a:hover {
+    color: aqua;
+}
+
+.contact .container .content-left .left-icons a:hover {
+    background-color: aqua;
+    color: #fff;
+}
+
+
+@media (max-width: 750px) {
+    .home .container {
+        flex-direction: column;
+        margin: 2rem 0;
+        padding-bottom: 28rem;
+    }
+
+    .home .container .content-left {
+        margin-right: 2rem;
+    }
+
+    .home .container .content-left h2 {
+        font-size: 1.6rem;
+    }
+
+    .home .container .content-left p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav .container .links {
+        position: absolute;
+        right: -100%;
+        background-color: rgb(24, 197, 197);
+        width: 10rem;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem 0 1rem 1rem;
+    }
+
+    nav .container .links ul {
+        flex-direction: column;
+    }
+
+    nav .container .links ul li a {
+        color: #fff;
+    }
+
+    nav .container .links.slide {
+        top: 3rem;
+        right: 4.2rem;
+    }
+    
+    nav .hamburger-menu {
+        display: inline-block;
+    }
+
+    .home .container {
+        margin: 2rem 0;
+        padding-bottom: 25rem;
+        flex-direction: column;
+    }
+
+    .about .container {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .about .container .right-content {
+        margin: 1rem 0;
+    }
+
+    .portfolio .container {
+        flex-direction: column;
+    }
+
+    .portfolio .grid-item {
+        width: 100%;
+    }
+
+    .portfolio .portfolio-content {
+        padding-top: 2rem;
+    }
+
+    .portfolio .portfolio-content p {
+        min-width: 100%;
+    }
+
+    .portfolio .portfolio-content .container {
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+
+    .clients-content .container .content {
+        width: 100%;
+    }
+
+    .clients-content .container .content img {
+        width: 80%;
+    }
+
+    .contact {
+        font-size: 1rem ;
+    }
+
+    .contact .container .content-left {
+        margin-right:  2rem;
+    }
+
+    .contact .container .content-left h2,
+    .contact .container .content-right h2 {
+        font-size: 1rem;
+    }
+
+    .contact .container .content-right a {
+        padding: .5rem 0;
+        font-size: .8rem;
+    }
+
+}
