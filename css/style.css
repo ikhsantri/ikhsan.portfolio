@@ -232,7 +232,6 @@ nav .hamburger-menu a {
 }
 
 .clients-content {
-    /* background-color: rgb(1, 40, 55); */
     padding-top: 2rem;
 }
 
@@ -248,10 +247,11 @@ nav .hamburger-menu a {
 }
 
 .clients-content .container .content {
-    width: 48%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .clients-content h2 {
@@ -338,7 +338,7 @@ nav .hamburger-menu a {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .home .container {
         flex-direction: column;
         margin: 2rem 0;
@@ -355,6 +355,11 @@ nav .hamburger-menu a {
 
     .home .container .content-left p {
         max-width: 90%;
+    }
+
+    .clients-content .container .content {
+        width: 40%;
+        margin: 0 auto;
     }
 }
 
@@ -407,7 +412,11 @@ nav .hamburger-menu a {
         flex-direction: column;
     }
 
-    .portfolio .grid-item {
+    .portfolio .portfolio-content .container .grid-item {
+        width: 100%;
+    }
+
+    .portfolio img {
         width: 100%;
     }
 
@@ -419,16 +428,17 @@ nav .hamburger-menu a {
         min-width: 100%;
     }
 
-    .portfolio .portfolio-content .container {
-        /* grid-template-columns: repeat(1, 1fr); */
+    .clients-content .container {
+        gap: 1;
     }
-
+    
     .clients-content .container .content {
-        width: 100%;
+        margin: 0 auto;
+        width: 40%;
     }
 
     .clients-content .container .content img {
-        width: 80%;
+        width: 100%;
     }
 
     .contact {
